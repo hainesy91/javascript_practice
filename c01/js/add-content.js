@@ -12,4 +12,6 @@ if (hourNow > 18) {
   greeting = "Welcome!";
 }
 
+
+//Document is a javascript object. .write() is a javascript method. Everything within the parenthesis are the paramters.
 document.write('<h3>' + greeting + '</h3>');
