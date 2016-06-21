@@ -12,3 +12,8 @@ var tiles = sign.length;
 var subTotal = tiles * 5;
 var shipping = 7;
 var grandTotal = subTotal + shipping;
+
+//Get the element that has an ID of greeting
+var el = document.getElementById('greeting');
+//Replace the content of that element with the personalized welcome message
+el.textContent = welcome;
