@@ -22,3 +22,10 @@ el.textContent = welcome;
 var elSign = document.getElementById('userSign');
 elSign.textContent = sign;
 
+//Get the element that has an ID of tiles and then update its content
+var elTiles = document.getElementById('tiles');
+elTiles.textContent = tiles;
+
+//Get the element that has an ID of subTotal and then update its content
+var elSubTotal = document.getElementById('subTotal');
+elSubTotal.textContent = subTotal;
