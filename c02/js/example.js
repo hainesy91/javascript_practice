@@ -17,3 +17,8 @@ var grandTotal = subTotal + shipping;
 var el = document.getElementById('greeting');
 //Replace the content of that element with the personalized welcome message
 el.textContent = welcome;
+
+//Get the element that has an ID of userSign and then update its content
+var elSign = document.getElementById('userSign');
+elSign.textContent = sign;
+
