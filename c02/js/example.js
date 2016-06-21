@@ -6,4 +6,9 @@ var message = '. Please check your order:';
 //Concatenate the three variables above to create the welcome message
 var welcome = greeting + name + message;
 
-//Create
+//Create variables to hold details about the sign
+var sign = 'Montague House';
+var tiles = sign.length;
+var subTotal = tiles * 5;
+var shipping = 7;
+var grandTotal = subTotal + shipping;
