@@ -28,4 +28,20 @@ elTiles.textContent = tiles;
 
 //Get the element that has an ID of subTotal and then update its content
 var elSubTotal = document.getElementById('subTotal');
-elSubTotal.textContent = subTotal;
+elSubTotal.textContent = '£' + subTotal;
+
+//Get the element that has an ID of shipping and then update its content
+var elShipping = document.getElementById('shipping');
+elShipping.textContent = '£' + shipping;
+
+//Get the element that has an ID of grandTotal and then update its content
+var elGrandTotal = document.getElementById('grandTotal');
+elGrandTotal.textContent = '£' + grandTotal;
+
+
+
+
+
+
+
+
