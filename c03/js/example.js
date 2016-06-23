@@ -43,7 +43,11 @@
     dayNames = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
     monthNames = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
     //Collect the parts of the date to show on the page
-    
+    day = dayNames[weekFromToday.getDay()];
+    date = weekFromToday.getDate();
+    month = monthNames[weekFromToday.getMonth()];
+    year = weekFromToday.getFullYear();
+    //Create the message
   }
 
 
