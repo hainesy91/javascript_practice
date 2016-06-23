@@ -53,10 +53,9 @@
     return expiryMsg;
   }
 
+  today = new Date();  //Put today's date in the Variable
+  elEnds = document.getElementById('offerEnds');  //Get the offerEnds element
+  elEnds.innerHTML = offerExpires(today);  //Add the expiry message
 
-
-
-
-
-
+  //Finish the immediately invoked function expression
 })
