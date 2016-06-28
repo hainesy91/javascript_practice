@@ -10,3 +10,7 @@ var minPass = ((score1 >= pass1) || (score2 >= pass2));
 
 //Create Message
 var msg = 'Resit Required ' + !minPass;
+
+//Write the message into the page
+var el = document.getElementById('answer2');
+el.textContent = msg;
