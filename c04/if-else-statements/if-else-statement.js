@@ -13,3 +13,5 @@ if (score >= pass) {
   msg = 'Have another go!';
 }
 
+var el = document.getElementById('answer');
+el.textContent = msg;
