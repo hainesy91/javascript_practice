@@ -8,4 +8,7 @@ var pass2 = 6; //Round 2 pass mark
 //Check whether the user passed both rounds, store result in a variable
 var passBoth = (score1 >= pass1) && (score2 >= pass2);
 
-//
+//Create message
+var msg = 'Both rounds passed: ' + passBoth;
+
+//Write the message into the page
