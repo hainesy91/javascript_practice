@@ -7,3 +7,6 @@ var pass2 = 6; //Round 2 pass mark
 
 //Check whether the user passed one of the two rounds, store the result in a variable
 var minPass = ((score1 >= pass1) || (score2 >= pass2));
+
+//Create Message
+var msg = 'Resit Required ' + !minPass;
