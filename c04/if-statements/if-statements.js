@@ -10,3 +10,5 @@ if (score >= 50) { //If score is 50 or higher
 
 var el = document.getElementById('answer');
 el.textContent = msg;
+
+//In this case, the statement evaluates to true (because the score us 75, which is greater than 50). Therefore, the contents of the statements within the subsequent code block are run, creating a message that congratulates the user and tells them to proceed. 
