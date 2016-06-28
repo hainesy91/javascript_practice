@@ -5,3 +5,11 @@
 var pass = 50; //Pass Mark
 var score = 75; //Current Score
 var msg; //Message
+
+//Select Message to write based on the score
+if (score >= pass) {
+  msg = 'Congratulations, you Passed! ';
+} else {
+  msg = 'Have another go!';
+}
+
