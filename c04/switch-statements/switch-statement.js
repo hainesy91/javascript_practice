@@ -21,3 +21,6 @@ switch (level) {
   msg = 'Good Luck!';
   break;
 }
+
+var el = document.getElementById('answer');
+el.textContent = msg;
