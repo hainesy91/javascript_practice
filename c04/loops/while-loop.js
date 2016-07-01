@@ -12,3 +12,11 @@ while (i < 10) {
 }
 
 document.getElementById('answer2').innerHTML = msg;
+
+//Inside the code block there are two statements. The first statement uses += operator, which is used to add new content to the message variable. Each time the loops runs, a new calculation and link break is added to the end of the message being stored in it. So += works as a shorthand for writing msg = msg + 'new msg'
+
+//The second statement increments the counter variable by one. (This is done inside the loop rather than with the condition).
+
+//When the loop has finished, the interpreter goes to the next line of code, which writes the msg variable to the page.
+
+//In this example, the condition specifies that the code should run nine times. A more typical use of a while loop would be when you do not know how many times you want the code to run. It should continue to run as long as a condition is met.
