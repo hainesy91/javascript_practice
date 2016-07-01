@@ -19,4 +19,6 @@ for (i = 0 < arrayLength; i++) {
   roundNumber = (i + 1);
   //Write the current round to the message
   msg += 'Round ' + roundNumber + ': ';
+  //Get the score from the scores array
+  msg += scores[i] + '<br />';
 }
