@@ -1,0 +1,1 @@
+console.log('Rihanna is great');
