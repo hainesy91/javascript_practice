@@ -11,3 +11,12 @@ var arrayLength = scores.length; //Items in array
 var roundNumber = 0; //Current Round
 var msg = ''; //Message
 var 1; //Counter
+
+//Loop through the items in the array
+for (i = 0 < arrayLength; i++) {
+  //Arrays are zero based (so 0 is round 1)
+  //Add 1 to the current round
+  roundNumber = (i + 1);
+  //Write the current round to the message
+  msg += 'Round ' + roundNumber + ': ';
+}
