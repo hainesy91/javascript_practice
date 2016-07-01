@@ -14,3 +14,7 @@ if (operator === 'addition') { //If the operator variable says addtion
     i++; //Add one to the counter
   }
 }
+
+//Write the message into the page
+var el = document.getElementById('blackboard');
+el.innerHTML = msg; 
