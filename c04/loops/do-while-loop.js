@@ -11,3 +11,5 @@ do {
 //Note how this is already 1 and still runs
 
 document.getElementById('answer3').innerHTML = msg;
+
+//If you take a look at the condition, it is checking that the value of the variable called i is less than 1, but that variable has already been set to the value of 1. Therefore, in this example, the result is that the 5 times table is written out once, even though the counter is not less than 1.
