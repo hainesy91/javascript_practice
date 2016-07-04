@@ -15,3 +15,6 @@ newEl.appendChild(newText);
 
 //Find the position where the new element should be added
 var position = document.getElementsByTagName('ul')[0];
+
+//Insert the new element into it's position
+position.appendChild(newEl);
