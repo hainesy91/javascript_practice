@@ -18,3 +18,5 @@ var position = document.getElementsByTagName('ul')[0];
 
 //Insert the new element into it's position
 position.appendChild(newEl);
+
+//The text node is added to the new element node using appendChild(). The getElementsByTagName() method selects the position in the DOM tree to insert the new element (the first <ul> element in the page). Finally, appendChild() is used again, this time to insert the new element and its content into the DOM tree as the last child.
