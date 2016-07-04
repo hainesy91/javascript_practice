@@ -12,3 +12,6 @@ var newText = document.createTextNode('quinoa');
 
 //Attach the new text node to the element
 newEl.appendChild(newText);
+
+//Find the position where the new element should be added
+var position = document.getElementsByTagName('ul')[0];
