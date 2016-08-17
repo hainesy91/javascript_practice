@@ -21,3 +21,10 @@ var i;  //Counter variable
 for (i = 0; i < listItems.length; i++) {  //loop through elements
   listItems[i].className = 'cool';  //Change class to cool
 }
+
+//Add number of items in the list to the heading
+var heading = document.querySelector('h2'); //h2 element
+var headingText = heading.firstChild.nodeValue; //h2 text
+var totalItems = listItems.length; //No. of <li> elements
+var newHeading = headingText + '<span>' + totalItems + '<span'; //Content
+heading.innerHTML = newHeading;
