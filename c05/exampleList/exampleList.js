@@ -15,3 +15,9 @@ list.insertBefore(newItemFirst, list.firstChild); //Add element to the list
 
 var listItems = document.querySelectorAll('li'); //All <li> elements
 
+//Add a class of Cool to all List Items
+
+var i;  //Counter variable
+for (i = 0; i < listItems.length; i++) {  //loop through elements
+  listItems[i].className = 'cool';  //Change class to cool
+}
