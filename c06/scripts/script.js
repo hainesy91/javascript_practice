@@ -14,3 +14,18 @@ function writeLabel(e) {  //Declare function
   noteName.textContent = textEntered; //Update note text
 }
 
+//This is where the record / pause controls and functions go...
+
+if (document.addEventListener) {                            //If event listener supported
+  document.addEventListener('click',function(e) {           //For any click document
+    recorderControls(e);                                    //Call recorderControls()
+  }, false);                                                //Capture during bubble phase
+  //If input event fires on noteInput, call writeLabel()
+  noteInput.addEventListener('input', writeLabel, false);
+} else {                                                    //Otherwise
+  document.attachEvent('onclick', function(e) {             //IE fallback: any click
+    recorderControls(e);                                    //Calls recorderControls
+  })
+  //If keyup event fires on noteInput, call writeLabel()
+  noteInput.attachEvent('onkeyup', writeLabel);
+}
