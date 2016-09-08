@@ -14,6 +14,28 @@ function writeLabel(e) {  //Declare function
   noteName.textContent = textEntered; //Update note text
 }
 
+function recorderControls(e) {        //Declare recorderControls()
+  if(!e) {                            //If event object not present
+    e = window.event;                 //Use IE5-8 fallback
+  }
+  target = e.target || e.srcElement;  //Get the target element
+  if(e.preventDefault) {              //If preventDefault supported
+    e.preventDefault();               //Stop the default action
+  } else {                            //Otherwise
+    e.returnValue = false;            //IE Fallback: stop default action
+  }
+
+  switch(target.getAttribute('data-state')) { //Get the data-state attribute
+    case 'record':                            //If its value is record
+      record(target);                         //Call the record function
+      break;                                  //Exit function to where called
+    case 'stop':                              //If its value is stop
+      stop(target);                           //Call the stop() function
+      break;                                  //Exit function to where called
+      //More buttons could go here...
+  }
+}
+
 //This is where the record / pause controls and functions go...
 
 if (document.addEventListener) {                            //If event listener supported
@@ -29,3 +51,4 @@ if (document.addEventListener) {                            //If event listener 
   //If keyup event fires on noteInput, call writeLabel()
   noteInput.attachEvent('onkeyup', writeLabel);
 }
+
