@@ -36,6 +36,11 @@ function recorderControls(e) {        //Declare recorderControls()
   }
 }
 
+function record(target) {                    //Declare function
+  target.setAttribute('data-state', 'stop'); //Set data attribute to stop
+  target.textContent = 'stop';               //Set text to stop
+}
+
 //This is where the record / pause controls and functions go...
 
 if (document.addEventListener) {                            //If event listener supported
